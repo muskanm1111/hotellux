@@ -1,16 +1,40 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+
+const Dosis = localFont({
+  src: "./fonts/Dosis-VariableFont_wght.ttf",
+  variable : "--font-dosis",
+  weight : "100 200 300 400 500 600 700"
+})
+
+
+const HerrVon = localFont({
+  src: "./fonts/HerrVonMuellerhoff-Regular.ttf",
+  variable: "--font-HerrVon",
+  weight: "400",
+});
+const Cormo = localFont({
+  src: "./fonts/Cormorant-VariableFont_wght.ttf",
+  variable: "--font-Cormo",
+  weight: "300 400 500 600 700",
+});
+
 
 export const metadata = {
   title: "Create Next App",
@@ -21,9 +45,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}
+         ${Dosis.variable} ${HerrVon.variable} ${Cormo.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
