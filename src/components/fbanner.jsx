@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Fbanner = () => {
   return (
-    <section className="relative w-full h-[80vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
+    <section className="relative w-full h-[80vh] md:h-[60vh]  overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -24,14 +24,14 @@ const Fbanner = () => {
       {/* Content Container */}
       <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-24">
         {/* Decorative "Discount" Text */}
-        <div className="relative mb-4">
-          <span className="text-4xl font-light italic text-gray-400 opacity-40 md:text-5xl lg:text-7xl">
+        <div className="relative mb-6">
+          <span className="text-4xl  HerrVon  text-gray-400 opacity-40 md:text-4xl lg:text-7xl">
             Discount
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="max-w-lg text-3xl font-light text-white uppercase md:text-4xl lg:text-5xl xl:text-6xl">
+        <h1 className="max-w-lg text-3xl Cormo text-white uppercase md:text-4xl lg:text-5xl xl:text-5xl">
           TAKE ADVANTAGE OF OUR SEASONAL SPECIALS.
         </h1>
 
@@ -39,7 +39,7 @@ const Fbanner = () => {
         <div className="mt-8 md:mt-12">
           <Link
             href="/reservations"
-            className="inline-block px-0 py-2 text-lg font-light text-amber-400 transition-all border-b border-transparent md:text-xl hover:border-amber-400"
+            className="inline-block dosis px-0 py-2 text-lg font-light text-amber-400 transition-all border-b border-transparent md:text-xl hover:border-amber-400"
           >
             Make a Reservation
           </Link>
