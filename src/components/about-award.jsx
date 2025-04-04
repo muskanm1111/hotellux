@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Aboutaward = () => {
-  // Animation variants
+ 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -38,7 +38,7 @@ const Aboutaward = () => {
     },
   };
 
-  // Award logos data
+  
   const awardLogos = [
     {
       name: "World Boutique Hotel Awards",
@@ -75,7 +75,7 @@ const Aboutaward = () => {
         viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
       >
-        {/* Decorative title and main heading */}
+       
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <motion.h3
             className=" text-[80px] HerrVon lg:text-[100px]  text-gray-300  text-5xl md:text-6xl lg:text-7xl font-light italic mb-2"
@@ -97,7 +97,7 @@ const Aboutaward = () => {
           </motion.h2>
         </motion.div>
 
-        {/* Content area */}
+      
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left column - Text content */}
           <motion.div variants={itemVariants}>
@@ -124,7 +124,7 @@ const Aboutaward = () => {
             </motion.p>
           </motion.div>
 
-          {/* Right column - Award logos */}
+        
           <motion.div
             className="grid grid-cols-1  md:grid-cols-2 gap-8"
             variants={itemVariants}

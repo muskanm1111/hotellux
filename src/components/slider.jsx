@@ -56,7 +56,7 @@ const Slider = () => {
       image: "/s4.jpg",
     },
     {
-      id: 4,
+      id: 5,
       name: "FAMILY ROOM",
       type: "COMFORT",
       view: "Garden or courtyard view",
@@ -66,7 +66,7 @@ const Slider = () => {
       image: "/s5.jpg",
     },
     {
-      id: 4,
+      id: 6,
       name: "FAMILY ROOM",
       type: "COMFORT",
       view: "Garden or courtyard view",
@@ -76,7 +76,7 @@ const Slider = () => {
       image: "/s6.jpg",
     },
     {
-      id: 4,
+      id: 7,
       name: "FAMILY ROOM",
       type: "COMFORT",
       view: "Garden or courtyard view",
@@ -86,7 +86,7 @@ const Slider = () => {
       image: "/s7.jpg",
     },
     {
-      id: 4,
+      id: 8,
       name: "FAMILY ROOM",
       type: "COMFORT",
       view: "Garden or courtyard view",
@@ -101,7 +101,7 @@ const Slider = () => {
 
   return (
     <section className="w-full bg-[#f5f5f5] py-12 md:py-24">
-      {/* Section Header with Watermark */}
+ 
       <div className="max-w-7xl  mx-auto px-4 mb-12 md:mb-16 relative text-center">
         <h2 className="text-[80px] md:text-[7rem]  HerrVon  font-serif text-gray-400 opacity-30 absolute top-0 left-1/2 transform -translate-x-1/2">
           Luxury
@@ -111,7 +111,6 @@ const Slider = () => {
         </h1>
       </div>
 
-      {/* Room Carousel */}
       <div className="max-w-6xl mx-auto px-4">
         <Carousel
           className="w-full"
@@ -136,7 +135,6 @@ const Slider = () => {
                         />
                       </div>
 
-                      {/* Room Details - Right Side */}
                       <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-center bg-white">
                         <h3 className="text-2xl md:text-3xl Cormo  text-gray-800 mb-2">
                           {room.name}
