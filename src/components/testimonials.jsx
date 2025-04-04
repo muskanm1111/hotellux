@@ -48,13 +48,13 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="w-full max-w-full px-4 py-16 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
+    <section className="w-full max-w-full px-4 lg:py-24 py-12 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
       {/* Heading with the stylish "Client" text */}
       <div className="relative w-full mb-16 text-center">
-        <h2 className="relative z-10 text-4xl font-normal text-center uppercase md:text-5xl lg:text-6xl">
+        <h2 className="relative z-10 text-[40px] Cormo font-normal text-center uppercase md:text-5xl lg:text-6xl">
           TESTIMONIALS
         </h2>
-        <span className="absolute top-0 left-0 right-0 z-0 text-5xl font-light text-center text-gray-200 transform -translate-y-1/4 md:text-6xl lg:text-7xl">
+        <span className="absolute top-0 left-0 HerrVon -mt-2 right-0 z-0 text-[100px] font-light text-center text-gray-200 transform -translate-y-1/4 md:text-6xl lg:text-[140px]">
           Client
         </span>
       </div>
@@ -85,7 +85,7 @@ const Testimonials = () => {
 
         <button
           onClick={handleNext}
-          className="absolute right-0 z-10 flex items-center justify-center w-10 h-10 text-gray-400 transform -translate-y-1/2 bg-transparent top-1/2 hover:text-gray-700"
+          className="absolute right-0 z-10  flex items-center justify-center w-10 h-10 text-gray-400 transform -translate-y-1/2 bg-transparent top-1/2 hover:text-gray-700"
           aria-label="Next testimonial"
         >
           <svg
@@ -118,7 +118,7 @@ const Testimonials = () => {
           </div>
 
           {/* Quote */}
-          <blockquote className="mb-6 text-lg font-light text-center text-gray-800 md:text-xl lg:text-2xl italic max-w-2xl">
+          <blockquote className="mb-6 text-xl font-light text-center text-gray-800 md:text-xl lg:text-2xl italic max-w-4xl">
             {currentTestimonial.quote}
           </blockquote>
 

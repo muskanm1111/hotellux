@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Fbanner = () => {
   return (
-    <section className="relative w-full h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
+    <section className="relative w-full h-[80vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image

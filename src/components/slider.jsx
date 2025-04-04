@@ -100,10 +100,10 @@ const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <section className="w-full bg-[#f5f5f5] py-16 md:py-24">
+    <section className="w-full bg-[#f5f5f5] py-12 md:py-24">
       {/* Section Header with Watermark */}
       <div className="max-w-7xl  mx-auto px-4 mb-12 md:mb-16 relative text-center">
-        <h2 className="text-5xl md:text-[7rem]  HerrVon  font-serif text-gray-400 opacity-30 absolute top-0 left-1/2 transform -translate-x-1/2">
+        <h2 className="text-[80px] md:text-[7rem]  HerrVon  font-serif text-gray-400 opacity-30 absolute top-0 left-1/2 transform -translate-x-1/2">
           Luxury
         </h2>
         <h1 className="text-5xl font-serif Cormo text-gray-800 pt-10 md:pt-16 relative z-10">
@@ -154,7 +154,7 @@ const Slider = () => {
                         </p>
 
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4">
-                          <div className="text-xl text-amber-600 dosis font-light mb-4 md:mb-0">
+                          <div className="text-xl text-[#a98868] dosis font-light mb-4 md:mb-0">
                             {room.price} / Night
                           </div>
 

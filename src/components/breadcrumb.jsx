@@ -29,32 +29,32 @@ const Breadcrumb = ({
       }}
     >
       {/* Main Title */}
-      <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-wider text-center mb-auto mt-auto">
+      <h1 className="text-4xl Cormo uppercase md:text-5xl lg:text-[50px] text-white  tracking-wider text-center mb-auto mt-auto">
         {title}
       </h1>
 
       {/* Breadcrumb Navigation */}
       <div className="flex items-center justify-center mb-8 md:mb-12">
         <nav className="flex" aria-label="Breadcrumb">
-          <ol className="inline-flex items-center space-x-2 md:space-x-3">
+          <ol className="inline-flex items-center dosis  space-x-2 md:space-x-3">
             {items.map((item, index) => (
               <React.Fragment key={index}>
                 {index > 0 && (
                   <li className="flex items-center">
-                    <span className="text-[#d4af37] mx-1 md:mx-2 text-lg">
-                      •
+                    <span className="text-white mx-1 md:mx-2 text-[16px] md:text-[20px]">
+                      /
                     </span>
                   </li>
                 )}
                 <li className="inline-flex items-center">
                   {index === items.length - 1 ? (
-                    <span className="text-[#d4af37] text-sm md:text-base uppercase font-light">
+                    <span className="text-white text-[10px] md:text-[16px] uppercase ">
                       {item.label}
                     </span>
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-[#d4af37] hover:text-white text-sm md:text-base uppercase font-light transition-colors duration-200"
+                      className="text-white text-[10px] md:text-[16px]  uppercase font-light transition-colors duration-200"
                     >
                       {item.label}
                     </Link>

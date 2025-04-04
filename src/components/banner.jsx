@@ -18,9 +18,6 @@ export const Banner = () => {
       title: "Feel Like Home",
       description: "FINEST HOTEL COLLECTION",
     },
-   
-   
- 
   ];
   const intervalRef = useRef(null);
 
@@ -127,7 +124,7 @@ export const Banner = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[80vh] md:h-screen overflow-hidden">
       {/* Image Container */}
       {imagesLoaded && (
         <div className="absolute inset-0 w-full h-full">
@@ -150,11 +147,14 @@ export const Banner = () => {
                 src={images[currentIndex].img}
                 alt={`banner-${currentIndex}`}
                 fill
-                className="object-cover object-center"
+                className="object-cover object-center w-full h-full bg-black/20"
                 priority={true}
-                sizes="100vw"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+                sizes="(max-width: 640px) 100vw,
+                       (max-width: 768px) 100vw,
+                       (max-width: 1024px) 100vw,
+                       100vw"
+                quality={90}
+           
               />
             </motion.div>
           </AnimatePresence>
@@ -164,7 +164,7 @@ export const Banner = () => {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 p-2 rounded-full"
+        className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-30 hover:bg-white/50 p-1 sm:p-2 bg-black/20 rounded-full hidden sm:block"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -173,7 +173,7 @@ export const Banner = () => {
 
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 p-2 rounded-full"
+        className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-30 hover:bg-white/50 p-1 sm:p-2 bg-black/20 rounded-full hidden sm:block"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -181,33 +181,33 @@ export const Banner = () => {
       </button>
 
       {/* Content */}
-      <section className="absolute inset-0 z-20 flex items-center justify-center md:mt-[5%]">
-        <div className="container mx-auto px-4">
+      <section className="absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6">
+        <div className="container mx-auto">
           <motion.div
-            className="max-w-4xl mx-auto text-center space-y-6 lg:space-y-8 p-4"
+            className="max-w-4xl mx-auto text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 p-2 sm:p-4"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-[6.5rem] HerrVon  text-white leading-tight md:leading-[1.3]"
+              className="text-6xl xl:text-[6.5rem] HerrVon text-white leading-tight tracking-wide"
               variants={headingVariants}
             >
               {images[currentIndex].title}
             </motion.h1>
 
             <motion.p
-              className="text-gray-200 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto"
+              className="text-gray-200 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl max-w-2xl mx-auto px-2"
               variants={itemVariants}
             >
               {images[currentIndex].description}
             </motion.p>
 
             <motion.button
-              className="bg-[#b99470] text-white hover:text-[#b99470] dosis font-semibold py-3 px-8  shadow-lg hover:bg-[#f7f7f7] transition duration-300 ease-in-out"
+              className="bg-[#b99470] text-white hover:text-[#b99470] dosis  py-2 sm:py-3 px-4 sm:px-6 md:px-8 text-xs sm:text-sm md:text-base shadow-lg hover:bg-[#f7f7f7] transition duration-300 ease-in-out "
               variants={itemVariants}
             >
-              ROOMS & SUITS{" "}
+              ROOMS & SUITS
             </motion.button>
           </motion.div>
         </div>

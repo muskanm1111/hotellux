@@ -27,13 +27,13 @@ const Services = () => {
   ];
 
   return (
-    <section className="w-full max-w-full px-4 py-16 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
+    <section className="w-full max-w-full px-4 py-20 lg:py-28 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
       {/* Heading with the stylish "Awesome" text */}
       <div className="relative w-full mb-12 text-center">
-        <h2 className="relative z-10 text-4xl font-normal text-center uppercase md:text-5xl lg:text-6xl">
+        <h2 className="relative z-10 text-[50px]  Cormo font-normal text-center uppercase md:text-5xl lg:text-[60px]">
           SERVICES
         </h2>
-        <span className="absolute top-0 left-0 right-0 z-0 text-5xl font-light text-center text-gray-200 transform -translate-y-1/4 md:text-6xl lg:text-7xl">
+        <span className="absolute top-0  -mt-6 md:-mb-4 left-0 right-0 z-0 text-[100px] HerrVon  text-center text-gray-300 transform -translate-y-1/4 md:text-6xl lg:text-[140px]">
           Awesome
         </span>
       </div>
@@ -61,8 +61,8 @@ const Services = () => {
                 <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
 
                 {/* Service title */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-2xl font-light tracking-wider text-white uppercase md:text-3xl">
+                <div className="absolute inset-0 flex items-center justify-center text-center">
+                  <h3 className="text-xl sm:text-2xl font-light tracking-wider text-white uppercase md:text-3xl px-2">
                     {service.title}
                   </h3>
                 </div>

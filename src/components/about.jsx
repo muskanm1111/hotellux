@@ -8,15 +8,15 @@ const About = () => {
       {/* Hero Content */}
       <div className=" mx-auto px-4 py-16 md:py-24 text-center max-w-7xl">
         {/* Welcome Text - Light Gray Watermark */}
-        <div className="relative mb-4">
-          <h2 className="text-5xl md:text-[6.5rem] HerrVon font-serif text-[#dedede] opacity-90 absolute top-0 left-0 right-0">
+        <div className="relative mb-9">
+          <h2 className="text-[100px] xl:text-[6.5rem] HerrVon  text-[#dedede] opacity-90 absolute top-0 left-0 right-0 ">
             Welcome
           </h2>
           <div className="pt-8 md:pt-12"></div> {/* Spacing for watermark */}
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-2xl Cormo md:text-4xl font-serif text-gray-800 leading-tight mb-8">
+        <h1 className="text-[40px] Cormo md:text-4xl  text-gray-800 leading-tight mb-8">
           WONDERFUL HOTEL IN THE
           <br />
           HEART OF ATHENS, GREECE.
@@ -44,27 +44,27 @@ const About = () => {
         {/* Three Column Image Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Image 1 - View */}
-          <div className="h-64 md:h-96 relative overflow-hidden">
+          <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
               src="/4-4.jpg"
               alt="Hotel view"
               fill
-              className="object-cover"
+              className="object-cover "
             />
           </div>
 
           {/* Image 2 - Person */}
-          <div className="h-64 md:h-96 relative overflow-hidden">
+          <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
               src="/3-6.jpg"
               alt="Hotel guest"
               fill
-              className="object-cover"
+              className="object-top object-cover "
             />
           </div>
 
           {/* Image 3 - Dining */}
-          <div className="h-64 md:h-96 relative overflow-hidden">
+          <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
               src="/2-5.jpg"
               alt="Hotel dining"

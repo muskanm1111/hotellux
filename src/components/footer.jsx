@@ -10,6 +10,7 @@ import {
   Twitter,
   Rss,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -36,16 +37,16 @@ const Footer = () => {
 
   const linkHoverVariants = {
     hover: {
-      color: "#d4af37",
+      color: "#a98868",
       x: 5,
-      transition: { type: "spring", stiffness: 300 },
+      transition: { type: "spring", stiffness: 100 },
     },
   };
 
   return (
-    <footer className="bg-[#121212] text-white">
+    <footer className="bg-[#151515] text-white">
       <motion.div
-        className="container mx-auto px-4 py-12"
+        className="max-w-7xl mx-auto px-4 py-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -54,14 +55,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* INFO SECTION */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-light mb-6 text-[#d4af37]">INFO</h3>
+            <h3 className="text-xl font-light mb-6 text-white Cormo">INFO</h3>
             <ul className="space-y-4">
               <motion.li
                 className="flex items-start gap-3"
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <MapPin className="h-5 w-5 text-[#d4af37] mt-0.5" />
+                <MapPin className="h-5 w-5 text-[#a98868] mt-0.5" />
                 <span>Brooklyn, NY 10036, United States</span>
               </motion.li>
               <motion.li
@@ -69,7 +70,7 @@ const Footer = () => {
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <Mail className="h-5 w-5 text-[#d4af37]" />
+                <Mail className="h-5 w-5 text-[#a98868]" />
                 <a href="mailto:example@example.com">example@example.com</a>
               </motion.li>
               <motion.li
@@ -77,7 +78,7 @@ const Footer = () => {
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <Phone className="h-5 w-5 text-[#d4af37]" />
+                <Phone className="h-5 w-5 text-[#a98868]" />
                 <a href="tel:1-800-123-1234">Call Us: 1-800-123-1234</a>
               </motion.li>
             </ul>
@@ -85,7 +86,7 @@ const Footer = () => {
 
           {/* ABOUT SECTION */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-light mb-6 text-[#d4af37]">ABOUT</h3>
+            <h3 className="text-xl font-light mb-6 text-white Cormo">ABOUT</h3>
             <ul className="space-y-4">
               {["About Us", "Services", "Rooms", "Our Location"].map((item) => (
                 <motion.li
@@ -99,7 +100,7 @@ const Footer = () => {
                     className="w-full flex justify-between items-center"
                   >
                     <span>{item}</span>
-                    <span className="text-[#d4af37]">•</span>
+                    <span className="text-[#a98868]">•</span>
                   </Link>
                 </motion.li>
               ))}
@@ -108,7 +109,7 @@ const Footer = () => {
 
           {/* QUICK LINKS SECTION */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-light mb-6 text-[#d4af37]">
+            <h3 className="text-xl font-light mb-6 text-white Cormo">
               QUICK LINKS
             </h3>
             <ul className="space-y-4">
@@ -124,7 +125,7 @@ const Footer = () => {
                     className="w-full flex justify-between items-center"
                   >
                     <span>{item}</span>
-                    <span className="text-[#d4af37]">•</span>
+                    <span className="text-[#a98868]">•</span>
                   </Link>
                 </motion.li>
               ))}
@@ -138,15 +139,15 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter Your Email..."
-                  className="w-full bg-[#1a1a1a] border border-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-[#d4af37]"
+                  className="w-full bg-[#1a1a1a] border border-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-[#a98868]"
                 />
                 <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                  <Mail className="h-5 w-5 text-[#d4af37]" />
+                  <Mail className="h-5 w-5 text-[#a98868]" />
                 </div>
               </div>
               <motion.button
-                className="w-full bg-[#d4af37] text-black font-medium py-3 mt-3"
-                whileHover={{ backgroundColor: "#e5c158" }}
+                className="w-full bg-[#a98868] text-black font-medium py-3 mt-3"
+                whileHover={{ backgroundColor: "white" }}
                 whileTap={{ scale: 0.98 }}
               >
                 SUBSCRIBE
@@ -179,7 +180,7 @@ const Footer = () => {
               <motion.a
                 key={index}
                 href={social.href}
-                className="text-[#d4af37] hover:text-white transition-colors"
+                className="text-[#a98868] hover:text-white transition-colors"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -196,7 +197,13 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
           >
-            HOTEL LUX
+            <Image
+              src={"/logo_footer.png"}
+              alt="Logo"
+              width={180}
+              height={40}
+              className="  h-16   lg:h-16"
+            />
           </motion.div>
 
           {/* COPYRIGHT */}
@@ -208,28 +215,16 @@ const Footer = () => {
             transition={{ delay: 0.9 }}
           >
             <div className="flex flex-wrap justify-center gap-x-2">
-              <Link href="#" className="text-[#d4af37] hover:underline">
+              <Link href="#" className="text-[#a98868] hover:underline">
                 Privacy Policy
               </Link>
               <span>/</span>
               <span>
-                This is a sample website - cmsmasters © 2025 / All Rights
-                Reserved
+                The site - &#169; 2025 / All Rights Reserved
               </span>
             </div>
           </motion.div>
         </div>
-      </div>
-
-      {/* PRIVACY & COOKIES POLICY */}
-      <div className="flex justify-end p-4">
-        <motion.button
-          className="bg-white text-black text-sm px-4 py-2"
-          whileHover={{ backgroundColor: "#f0f0f0" }}
-          whileTap={{ scale: 0.98 }}
-        >
-          Privacy & Cookies Policy
-        </motion.button>
       </div>
     </footer>
   );

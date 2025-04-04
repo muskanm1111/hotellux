@@ -1,11 +1,13 @@
 import Breadcrumb from '@/components/breadcrumb';
+import Contact from '@/components/contact';
 import React from 'react'
 
 const page = () => {
   return (
     <div>
       {" "}
-      <Breadcrumb title="contact us" label="Home" href="/" />
+      <Breadcrumb title="Contacts" label="Home" href="/" />
+      <Contact />
     </div>
   );
 }

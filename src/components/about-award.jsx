@@ -44,25 +44,25 @@ const Aboutaward = () => {
       name: "World Boutique Hotel Awards",
       src: "/a1.jpg",
       width: 200,
-      height: 80,
+      height: 100,
     },
     {
       name: "TripAdvisor Travellers' Choice",
       src: "/a2.jpg",
-      width: 100,
+      width: 200,
       height: 100,
     },
     {
       name: "World Luxury Spa Awards",
       src: "/a3.jpg",
-      width: 100,
+      width: 200,
       height: 100,
     },
     {
       name: "European Hotel Design Awards",
       src: "/a4.jpg",
       width: 200,
-      height: 80,
+      height: 100,
     },
   ];
 
@@ -78,7 +78,7 @@ const Aboutaward = () => {
         {/* Decorative title and main heading */}
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <motion.h3
-            className="text-gray-300 text-5xl md:text-6xl lg:text-7xl font-light italic mb-2"
+            className=" text-[80px] HerrVon lg:text-[100px]  text-gray-300  text-5xl md:text-6xl lg:text-7xl font-light italic mb-2"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -87,7 +87,7 @@ const Aboutaward = () => {
             Winner
           </motion.h3>
           <motion.h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide text-gray-900"
+            className="  tracking-wide text-gray-900 text-5xl md:text-5xl lg:text-6xl Cormo -mt-10 uppercase"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -102,19 +102,19 @@ const Aboutaward = () => {
           {/* Left column - Text content */}
           <motion.div variants={itemVariants}>
             <motion.h4
-              className="text-2xl md:text-3xl lg:text-4xl font-serif mb-3"
+              className="text-2xl md:text-3xl lg:text-4xl Cormo font-serif mb-3"
               variants={itemVariants}
             >
               Awards Received 2001-2017
             </motion.h4>
             <motion.p
-              className="text-gray-400 italic mb-6"
+              className="text-gray-400 Cormo italic mb-6"
               variants={itemVariants}
             >
               Stylish global leader of hospitality.
             </motion.p>
             <motion.p
-              className="text-gray-600 leading-relaxed"
+              className="text-gray-600 dosis leading-relaxed"
               variants={itemVariants}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -126,7 +126,7 @@ const Aboutaward = () => {
 
           {/* Right column - Award logos */}
           <motion.div
-            className="grid grid-cols-2 gap-8"
+            className="grid grid-cols-1  md:grid-cols-2 gap-8"
             variants={itemVariants}
           >
             {awardLogos.map((logo, index) => (
@@ -137,11 +137,11 @@ const Aboutaward = () => {
                 whileHover="hover"
               >
                 <Image
-                  src={logo.src || "/placeholder.svg"}
+                  src={logo.src }
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain max-h-24"
+                  className="object-cover max-h-28 lg:max-h-40"
                 />
               </motion.div>
             ))}

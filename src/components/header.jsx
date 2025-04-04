@@ -1,4 +1,4 @@
- "use client";
+"use client";
 import React, { useState } from "react";
 
 import Link from "next/link";
@@ -10,6 +10,10 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -48,7 +52,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/features"
+              href="/"
               className="uppercase text-base font-medium hover:text-[#b99470]"
             >
               Features
@@ -56,7 +60,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/shortcodes"
+              href="/"
               className="uppercase text-base font-medium hover:text-[#b99470]"
             >
               Shortcodes
@@ -64,7 +68,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/post-types"
+              href="/"
               className="uppercase text-base font-medium hover:text-[#b99470]"
             >
               Post Types
@@ -84,7 +88,7 @@ const Header = () => {
       {/* Right section - Icons and CTA */}
       <div className="flex items-center">
         {/* Search and Cart Icons */}
-        <div className="hidden md:flex items-center bg-white h-16 px-4 lg:h-20">
+        <div className="flex md:flex items-center bg-white h-16 px-4 lg:h-20">
           <button className="p-2" aria-label="Search">
             <Search size={20} />
           </button>
@@ -96,89 +100,82 @@ const Header = () => {
           </Link> */}
         </div>
 
-        {/* Book Now Button */}
-        <Link
-          href="/booking"
-          className="bg-[#b99470] text-white hover:bg-black  transition duration-300 ease-in-out px-4 py-2 h-16 flex items-center font-medium lg:h-20 lg:px-8"
-        >
-          BOOK NOW
-        </Link>
-
-        {/* Mobile Menu Button */}
         <button
-          className="md:hidden bg-amber-700 text-white p-4 h-16"
+          className="md:hidden  text-black p-4 h-16"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
+
+        <Link
+          href="/booking"
+          className="bg-[#b99470] text-white hover:bg-black  transition duration-300 ease-in-out px-4 py-2 h-16 flex items-center text-nowrap font-medium lg:h-20 lg:px-8"
+        >
+          BOOK NOW
+        </Link>
       </div>
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white z-50 shadow-lg">
+        <div className="md:hidden absolute top-16 left-0 right-0 w-full text-gray-200 bg-black/95 z-50 shadow-lg">
           <nav className="px-4 py-4">
-            <ul className="space-y-4">
+            <ul className="space-y-4 dosis">
               <li>
                 <Link
                   href="/"
-                  className="block uppercase text-sm font-medium hover:text-gray-500"
+                  onClick={closeMenu}
+                  className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
                   Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/rooms"
-                  className="block uppercase text-sm font-medium hover:text-gray-500"
+                  href="/about"
+                  onClick={closeMenu}
+                  className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
-                  Rooms
+                  About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/features"
-                  className="block uppercase text-sm font-medium hover:text-gray-500"
+                  href="/"
+                  onClick={closeMenu}
+                  className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
                   Features
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/shortcodes"
-                  className="block uppercase text-sm font-medium hover:text-gray-500"
+                  href="/"
+                  onClick={closeMenu}
+                  className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
                   Shortcodes
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/post-types"
-                  className="block uppercase text-sm font-medium hover:text-gray-500"
+                  href="/"
+                  onClick={closeMenu}
+                  className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
                   Post Types
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contacts"
-                  className="block uppercase text-sm font-medium hover:text-gray-500"
+                  href="/contact"
+                  onClick={closeMenu}
+                  className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
                   Contacts
                 </Link>
               </li>
             </ul>
-            <div className="flex items-center mt-4 space-x-4">
-              <button className="p-2" aria-label="Search">
-                <Search size={20} />
-              </button>
-              <Link href="/cart" className="p-2 relative" aria-label="Cart">
-                <ShoppingBag size={20} />
-                <span className="absolute top-0 right-0 bg-amber-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
-                  1
-                </span>
-              </Link>
-            </div>
           </nav>
         </div>
       )}
