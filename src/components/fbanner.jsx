@@ -25,7 +25,7 @@ const Fbanner = () => {
       <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-24">
         {/* Decorative "Discount" Text */}
         <div className="relative mb-6">
-          <span className="text-4xl  HerrVon  text-gray-400 opacity-40 md:text-4xl lg:text-7xl">
+          <span className="text-5xl  HerrVon  text-gray-400 opacity-40 md:text-4xl lg:text-7xl">
             Discount
           </span>
         </div>
