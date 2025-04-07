@@ -55,15 +55,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* INFO SECTION */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-light mb-6 text-white Cormo">INFO</h3>
+            <h3 className="text-3xl font-light mb-6 text-white Cormo ">
+              Hotel
+            </h3>
             <ul className="space-y-4">
               <motion.li
                 className="flex items-start gap-3"
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <MapPin className="h-5 w-5 text-[#a98868] mt-0.5" />
-                <span>Brooklyn, NY 10036, United States</span>
+                <MapPin className="h-12 w-12 text-[#a98868] mt-0.5" />
+                <span>
+                  T-16, Pocket-5, Plot no-6, Malik Builcon, Commercial Plaza
+                  Dwarka Sector-12, New Delhi, 110075
+                </span>
               </motion.li>
               <motion.li
                 className="flex items-center gap-3"
@@ -71,7 +76,7 @@ const Footer = () => {
                 variants={linkHoverVariants}
               >
                 <Mail className="h-5 w-5 text-[#a98868]" />
-                <a href="mailto:example@example.com">example@example.com</a>
+                <a href="mailto:example@example.com">hello@desirediv.com</a>
               </motion.li>
               <motion.li
                 className="flex items-center gap-3"
@@ -191,19 +196,13 @@ const Footer = () => {
 
           {/* LOGO */}
           <motion.div
-            className="text-4xl font-light tracking-widest mb-8"
+            className="text-4xl font-bold text-gray-100 Cormo tracking-widest mb-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
           >
-            <Image
-              src={"/logo_footer.png"}
-              alt="Logo"
-              width={180}
-              height={40}
-              className="  h-16   lg:h-16"
-            />
+            HOTEL
           </motion.div>
 
           {/* COPYRIGHT */}
@@ -219,9 +218,7 @@ const Footer = () => {
                 Privacy Policy
               </Link>
               <span>/</span>
-              <span>
-                The site - &#169; 2025 / All Rights Reserved
-              </span>
+              <span>The site - &#169; 2025 / All Rights Reserved</span>
             </div>
           </motion.div>
         </div>

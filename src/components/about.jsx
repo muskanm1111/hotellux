@@ -46,17 +46,17 @@ const About = () => {
           {/* Image 1 - View */}
           <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
-              src="/4-4.jpg"
+              src="/os1.jpeg"
               alt="Hotel view"
               fill
-              className="object-cover "
+              className="object-left object-cover "
             />
           </div>
 
           {/* Image 2 - Person */}
           <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
-              src="/3-6.jpg"
+              src="/os2.jpeg"
               alt="Hotel guest"
               fill
               className="object-top object-cover "
@@ -66,7 +66,7 @@ const About = () => {
           {/* Image 3 - Dining */}
           <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
-              src="/2-5.jpg"
+              src="/os3.jpeg"
               alt="Hotel dining"
               fill
               className="object-cover"

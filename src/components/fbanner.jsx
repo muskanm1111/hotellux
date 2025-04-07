@@ -36,7 +36,7 @@ const Fbanner = () => {
         </h1>
 
         {/* CTA Button */}
-        <div className="mt-8 md:mt-12">
+        <div className="mt-4 md:mt-6">
           <Link
             href="/reservations"
             className="inline-block dosis px-0 py-2 text-lg font-light text-amber-400 transition-all border-b border-transparent md:text-xl hover:border-amber-400"

@@ -23,7 +23,7 @@ const Slider = () => {
       description:
         "Premium Double Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance shower or a bath and shower and modern art and neutral colors.",
       price: "400",
-      image: "/s1.jpg",
+      image: "/os2.jpeg",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Slider = () => {
       description:
         "Our Executive Suite offers spacious comfort with a king-size bed, separate living area, work desk, and a luxurious bathroom with both rainfall shower and soaking tub.",
       price: "550",
-      image: "/s2.jpg",
+      image: "/40.jpeg",
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const Slider = () => {
       description:
         "Perfect for families, this spacious room features two queen beds, a cozy seating area, and a large bathroom with bathtub and shower combination.",
       price: "480",
-      image: "/s3.jpg",
+      image: "/50.jpeg",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const Slider = () => {
       description:
         "Perfect for families, this spacious room features two queen beds, a cozy seating area, and a large bathroom with bathtub and shower combination.",
       price: "480",
-      image: "/s4.jpg",
+      image: "/40.jpeg",
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ const Slider = () => {
       description:
         "Perfect for families, this spacious room features two queen beds, a cozy seating area, and a large bathroom with bathtub and shower combination.",
       price: "480",
-      image: "/s5.jpg",
+      image: "/50.jpeg",
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ const Slider = () => {
       description:
         "Perfect for families, this spacious room features two queen beds, a cozy seating area, and a large bathroom with bathtub and shower combination.",
       price: "480",
-      image: "/s6.jpg",
+      image: "/60.jpeg",
     },
     {
       id: 7,
@@ -83,7 +83,7 @@ const Slider = () => {
       description:
         "Perfect for families, this spacious room features two queen beds, a cozy seating area, and a large bathroom with bathtub and shower combination.",
       price: "480",
-      image: "/s7.jpg",
+      image: "/70.jpeg",
     },
     {
       id: 8,
@@ -93,7 +93,7 @@ const Slider = () => {
       description:
         "Perfect for families, this spacious room features two queen beds, a cozy seating area, and a large bathroom with bathtub and shower combination.",
       price: "480",
-      image: "/s8.jpg",
+      image: "/80.jpeg",
     },
   ];
 

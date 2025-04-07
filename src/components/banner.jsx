@@ -14,7 +14,7 @@ export const Banner = () => {
       description: "FINEST HOTEL COLLECTION",
     },
     {
-      img: "/slide-2.jpg",
+      img: "/os2.jpeg",
       title: "Feel Like Home",
       description: "FINEST HOTEL COLLECTION",
     },
@@ -132,7 +132,7 @@ export const Banner = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.6 }}
             transition={{ duration: 1 }}
-            className="absolute w-full h-full bg-black inset-0 z-10"
+            className="absolute w-full h-full bg-black inset-0 z-[5]"
           />
           <AnimatePresence mode="sync">
             <motion.div

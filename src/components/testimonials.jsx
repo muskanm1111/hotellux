@@ -9,7 +9,7 @@ const Testimonials = () => {
       id: 1,
       quote:
         "Chilling out on the bed in your hotel room watching television, while wearing your own pajamas, is sometimes the best part of a vacation.",
-      name: "LAURA MARANO",
+      name: "Rohan Sharma",
       title: "DESIGNER",
       image: "/t1.jpg",
     },
@@ -17,7 +17,7 @@ const Testimonials = () => {
       id: 2,
       quote:
         "The attention to detail and personalized service made our stay truly unforgettable. The staff went above and beyond to ensure our comfort.",
-      name: "MICHAEL CHEN",
+      name: "Rohit Verma",
       title: "ENTREPRENEUR",
       image: "/t2.jpg",
     },
@@ -25,7 +25,7 @@ const Testimonials = () => {
       id: 3,
       quote:
         "From the moment we arrived, we were treated like royalty. The amenities are world-class and the views from our suite were absolutely breathtaking.",
-      name: "SOPHIA RODRIGUEZ",
+      name: "Priya Singh",
       title: "TRAVEL BLOGGER",
       image: "/t2.jpg",
     },
@@ -64,7 +64,7 @@ const Testimonials = () => {
         {/* Navigation Arrows */}
         <button
           onClick={handlePrev}
-          className="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-gray-400 transform -translate-y-1/2 bg-transparent top-1/2 hover:text-gray-700"
+          className="absolute left-0 z-10  flex items-center justify-center w-10 h-10 text-gray-400 transform -translate-y-1/2 bg-transparent top-1/2 hover:text-gray-700"
           aria-label="Previous testimonial"
         >
           <svg
@@ -107,7 +107,7 @@ const Testimonials = () => {
         {/* Testimonial Content */}
         <div className="flex flex-col items-center">
           {/* Profile Image */}
-          <div className="relative w-20 h-20 mb-8 overflow-hidden rounded-full md:w-24 md:h-24">
+          {/* <div className="relative w-20 h-20 mb-8 overflow-hidden rounded-full md:w-24 md:h-24">
             <Image
               src={currentTestimonial.image}
               alt={`Testimonial by ${currentTestimonial.name}`}
@@ -115,7 +115,7 @@ const Testimonials = () => {
               objectFit="cover"
               className="transition-opacity duration-300"
             />
-          </div>
+          </div> */}
 
           {/* Quote */}
           <blockquote className="mb-6 text-xl font-light text-center text-gray-800 md:text-xl lg:text-2xl italic max-w-4xl">
@@ -127,9 +127,9 @@ const Testimonials = () => {
             <p className="text-lg font-medium tracking-wide text-gray-900 uppercase md:text-xl">
               {currentTestimonial.name}
             </p>
-            <p className="text-sm font-light tracking-wider text-gray-500 uppercase md:text-base">
+            {/* <p className="text-sm font-light tracking-wider text-gray-500 uppercase md:text-base">
               {currentTestimonial.title}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

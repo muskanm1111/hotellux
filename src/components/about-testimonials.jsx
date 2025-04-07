@@ -3,21 +3,21 @@ import Image from "next/image";
 const Abouttestimonials = () => {
   const testimonials = [
     {
-      name: "Mike Jameson",
+      name: "Rohit Verma",
       title: "DEVELOPER",
       image: "/t1.jpg",
       quote:
         "The Hotel is simply amazing. The subtle luxury of refined simplicity, uncluttered and unpretentious. Very private and the staff is an attentive and discreet. I recommend it to everyone.",
     },
     {
-      name: "Laura Marano",
+      name: "Priya Singh",
       title: "DESIGNER",
       image: "/t2.jpg",
       quote:
         "Chilling out on the bed in your hotel room watching television, while wearing your own pajamas, is sometimes the best part of a vacation.",
     },
     {
-      name: "Mia Turner",
+      name: "Rohan Sharma",
       title: "MODEL",
       image: "/t1.jpg",
       quote:
@@ -45,7 +45,7 @@ const Abouttestimonials = () => {
             className="flex flex-col items-center px-6 py-8  md:border-t-0 md:border-l border-gray-200  md:first:border-l-0"
           >
             {/* Profile Image */}
-            <div className="w-24 h-24 rounded-full overflow-hidden relative mb-6">
+            {/* <div className="w-24 h-24 rounded-full overflow-hidden relative mb-6">
               <Image
                 src={testimonial.image}
                 alt={testimonial.name}
@@ -53,15 +53,15 @@ const Abouttestimonials = () => {
                 objectFit="cover"
                 className="rounded-full"
               />
-            </div>
+            </div> */}
 
             {/* Name and Title */}
             <h3 className="text-2xl font-light text-[#a98868]">
               {testimonial.name}
             </h3>
-            <p className="text-gray-500 uppercase tracking-wider text-sm mt-1 mb-6">
+            {/* <p className="text-gray-500 uppercase tracking-wider text-sm mt-1 mb-6">
               {testimonial.title}
-            </p>
+            </p> */}
 
             {/* Quote */}
             <p className="text-center text-gray-700 italic font-light leading-relaxed">
