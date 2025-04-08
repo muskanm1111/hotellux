@@ -99,7 +99,7 @@ const Aboutaward = () => {
 
       
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left column - Text content */}
+          {/* Left  */}
           <motion.div variants={itemVariants}>
             <motion.h4
               className="text-2xl md:text-3xl lg:text-4xl Cormo font-serif mb-3"

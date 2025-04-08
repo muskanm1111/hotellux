@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+
 
 const Testimonials = () => {
   const testimonials = [
@@ -49,7 +49,7 @@ const Testimonials = () => {
 
   return (
     <section className="w-full max-w-full px-4 lg:py-24 py-12 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
-      {/* Heading with the stylish "Client" text */}
+  
       <div className="relative w-full mb-16 text-center">
         <h2 className="relative z-10 text-[40px] Cormo font-normal text-center uppercase md:text-5xl lg:text-6xl">
           TESTIMONIALS
@@ -59,9 +59,8 @@ const Testimonials = () => {
         </span>
       </div>
 
-      {/* Testimonial Slider */}
       <div className="relative max-w-4xl mx-auto">
-        {/* Navigation Arrows */}
+    
         <button
           onClick={handlePrev}
           className="absolute left-0 z-10  flex items-center justify-center w-10 h-10 text-gray-400 transform -translate-y-1/2 bg-transparent top-1/2 hover:text-gray-700"
@@ -104,32 +103,17 @@ const Testimonials = () => {
           </svg>
         </button>
 
-        {/* Testimonial Content */}
+       
         <div className="flex flex-col items-center">
-          {/* Profile Image */}
-          {/* <div className="relative w-20 h-20 mb-8 overflow-hidden rounded-full md:w-24 md:h-24">
-            <Image
-              src={currentTestimonial.image}
-              alt={`Testimonial by ${currentTestimonial.name}`}
-              layout="fill"
-              objectFit="cover"
-              className="transition-opacity duration-300"
-            />
-          </div> */}
-
-          {/* Quote */}
           <blockquote className="mb-6 text-xl font-light text-center text-gray-800 md:text-xl lg:text-2xl italic max-w-4xl">
             {currentTestimonial.quote}
           </blockquote>
 
-          {/* Name and Title */}
+         
           <div className="text-center">
             <p className="text-lg font-medium tracking-wide text-gray-900 uppercase md:text-xl">
               {currentTestimonial.name}
             </p>
-            {/* <p className="text-sm font-light tracking-wider text-gray-500 uppercase md:text-base">
-              {currentTestimonial.title}
-            </p> */}
           </div>
         </div>
       </div>

@@ -9,12 +9,12 @@ export const Banner = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const images = [
     {
-      img: "/1.jpg",
+      img: "/os2.jpeg",
       title: "Book Early Save More",
       description: "FINEST HOTEL COLLECTION",
     },
     {
-      img: "/os2.jpeg",
+      img: "/1.jpg",
       title: "Feel Like Home",
       description: "FINEST HOTEL COLLECTION",
     },
@@ -65,7 +65,7 @@ export const Banner = () => {
     };
   }, [imagesLoaded, images.length]);
 
-  // Animation variants
+ 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -125,7 +125,7 @@ export const Banner = () => {
 
   return (
     <div className="relative w-full h-[80vh] md:h-screen overflow-hidden">
-      {/* Image Container */}
+   
       {imagesLoaded && (
         <div className="absolute inset-0 w-full h-full">
           <motion.div
@@ -161,7 +161,14 @@ export const Banner = () => {
         </div>
       )}
 
-      {/* Navigation Arrows */}
+
+
+
+
+
+
+
+
       <button
         onClick={goToPrevious}
         className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-30 hover:bg-white/50 p-1 sm:p-2 bg-black/20 rounded-full hidden sm:block"
@@ -180,7 +187,7 @@ export const Banner = () => {
         </svg>
       </button>
 
-      {/* Content */}
+    
       <section className="absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6">
         <div className="container mx-auto">
           <motion.div

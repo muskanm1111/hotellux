@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-// Import Shadcn components
 import {
   Carousel,
   CarouselContent,
@@ -120,12 +119,12 @@ const Slider = () => {
           }}
         >
           <CarouselContent>
-            {rooms.map((room, index) => (
+            {rooms.map((room) => (
               <CarouselItem key={room.id} className="w-full">
                 <div className="border-none shadow-none">
                   <div className="p-0">
                     <div className="flex flex-col md:flex-row">
-                      {/* Room Image - Left Side */}
+                  
                       <div className="w-full md:w-1/2 h-[450px] relative">
                         <Image
                           src={room.image}
@@ -180,7 +179,6 @@ const Slider = () => {
         </Carousel>
       </div>
 
-      {/* Navigation Dots */}
       <div className="flex justify-center mt-8 space-x-4">
         {rooms.map((_, index) => (
           <button

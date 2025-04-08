@@ -4,7 +4,6 @@ import { MapPin, Mail, Phone } from "lucide-react";
 const Contact = () => {
   return (
     <section className="w-full py-16 md:py-20 px-4">
-      {/* Header Section with elegant typography */}
       <div className="w-full text-center mb-16">
         <h2 className="text-[80px] md:text-5xl lg:text-[140px] HerrVon  text-gray-300 ">
           Connect
@@ -14,11 +13,11 @@ const Contact = () => {
         </h2>
       </div>
 
-      {/* Contact Content */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Map and Contact Info */}
-        <div className="flex flex-col">
-          {/* Map Placeholder */}
+         <div className="flex flex-col">
+        
+
+
           <div className="md:w-[400px] md:h-60 overflow-x-hidden bg-gray-100 flex flex-col items-center justify-center mb-8">
             <div className="text-gray-500 mb-2">
               <iframe
@@ -28,37 +27,32 @@ const Contact = () => {
                 referRepolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            {/* <h3 className="text-xl text-gray-700 font-medium">
-              Oops! Something went wrong.
-            </h3>
-            <p className="text-gray-500 text-sm mt-2 text-center px-4">
-              This page didn't load Google Maps correctly. See the JavaScript
-              console for technical details.
-            </p> */}
           </div>
 
-          {/* Contact Information */}
+          {/* Contact  */}
           <div className="px-4">
             <h3 className="text-2xl Cormo font-light text-gray-700 italic mb-6">
               Our contacts
             </h3>
 
             <div className="space-y-4 dosis">
-              {/* Address */}
-              <div className="flex items-start">
+            
+              <div className="flex items-start  max-w-sm ">
                 <MapPin className="h-5 w-5 text-[#b99470] mt-1 mr-3" />
-                <p className="text-gray-600">
-                  Brooklyn, NY 10036, United States
+                <p className="text-gray-600 text-wrap">
+                  T-16, Pocket-5, Plot no-6, Malik Builcon, Commercial Plaza
+                  Dwarka Sector-12, New Delhi, 110075
                 </p>
               </div>
 
-              {/* Email */}
+          
               <div className="flex items-start">
                 <Mail className="h-5 w-5 text-[#b99470] mt-1 mr-3" />
-                <p className="text-gray-600">example@example.com</p>
+                <p className="text-gray-600">hello@desirediv.com</p>
               </div>
+             
 
-              {/* Phone */}
+             
               <div className="flex items-start">
                 <Phone className="h-5 w-5 text-[#b99470] mt-1 mr-3" />
                 <p className="text-gray-600">Call Us: 1-800-123-1234</p>
@@ -67,10 +61,9 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div className="w-full">
           <form className="space-y-6">
-            {/* Name Field */}
+          
             <div>
               <label
                 htmlFor="name"
@@ -87,8 +80,7 @@ const Contact = () => {
               />
             </div>
 
-            {/* Email Field */}
-            <div>
+             <div>
               <label
                 htmlFor="email"
                 className="block text-[18px]  dosis text-gray-500 mb-1"
@@ -104,7 +96,7 @@ const Contact = () => {
               />
             </div>
 
-            {/* Message Field */}
+         
             <div>
               <label
                 htmlFor="message"
@@ -120,7 +112,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            {/* Submit Button */}
+         
             <div>
               <button
                 type="submit"

@@ -5,7 +5,6 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      {" "}
       <Breadcrumb title="Contacts" label="Home" href="/" />
       <Contact />
     </div>

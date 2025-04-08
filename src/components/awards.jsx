@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Awards = () => {
-  // Award data with image paths and alt text
   const awards = [
     {
       id: 1,

@@ -5,9 +5,9 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="w-full bg-white">
-      {/* Hero Content */}
+     
       <div className=" mx-auto px-4 py-16 md:py-24 text-center max-w-7xl">
-        {/* Welcome Text - Light Gray Watermark */}
+        
         <div className="relative mb-9">
           <h2 className="text-[100px] xl:text-[6.5rem] HerrVon  text-[#dedede] opacity-90 absolute top-0 left-0 right-0 ">
             Welcome
@@ -15,14 +15,14 @@ const About = () => {
           <div className="pt-8 md:pt-12"></div> {/* Spacing for watermark */}
         </div>
 
-        {/* Main Heading */}
+      
         <h1 className="text-[40px] Cormo md:text-4xl  text-gray-800 leading-tight mb-8">
           WONDERFUL HOTEL IN THE
           <br />
           HEART OF ATHENS, GREECE.
         </h1>
 
-        {/* Description Paragraph */}
+       
         <p className="text-gray-600 dosis leading-relaxed mb-10 max-w-2xl mx-auto text-xl">
           Hotel LUX is an oasis in the heart of the historic and business center
           of Athens. Here the Greek art of hospitality complements the legendary
@@ -31,8 +31,7 @@ const About = () => {
           central metro station. Enjoy a comfortable stay in our Luxury Room.
         </p>
 
-        {/* View Services Button */}
-        <div className="mb-16">
+          <div className="mb-16">
           <Link
             href="/services"
             className="text-[#b99470] Cormo italic text-2xl hover:text-amber-700 transition-colors"
@@ -41,9 +40,8 @@ const About = () => {
           </Link>
         </div>
 
-        {/* Three Column Image Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Image 1 - View */}
+         
           <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
               src="/os1.jpeg"
@@ -53,7 +51,7 @@ const About = () => {
             />
           </div>
 
-          {/* Image 2 - Person */}
+         
           <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
               src="/os2.jpeg"
@@ -63,7 +61,7 @@ const About = () => {
             />
           </div>
 
-          {/* Image 3 - Dining */}
+       
           <div className="h-80 md:h-96 relative overflow-hidden">
             <Image
               src="/os3.jpeg"

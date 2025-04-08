@@ -6,10 +6,10 @@ import Link from "next/link";
 const Fbanner = () => {
   return (
     <section className="relative w-full h-[80vh] md:h-[60vh]  overflow-hidden">
-      {/* Background Image */}
+    
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/fb.jpg"
+          src="/s7.jpg"
           alt="Aerial view of hotel lobby"
           layout="fill"
           objectFit="cover"
@@ -17,25 +17,25 @@ const Fbanner = () => {
           className="brightness-[0.85]"
         />
 
-        {/* Overlay gradient */}
+  
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
       </div>
 
-      {/* Content Container */}
+    
       <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-24">
-        {/* Decorative "Discount" Text */}
+      
         <div className="relative mb-6">
           <span className="text-5xl  HerrVon  text-gray-400 opacity-40 md:text-4xl lg:text-7xl">
             Discount
           </span>
         </div>
 
-        {/* Main Heading */}
+    
         <h1 className="max-w-lg text-3xl Cormo text-white uppercase md:text-4xl lg:text-5xl xl:text-5xl">
           TAKE ADVANTAGE OF OUR SEASONAL SPECIALS.
         </h1>
 
-        {/* CTA Button */}
+    
         <div className="mt-4 md:mt-6">
           <Link
             href="/reservations"

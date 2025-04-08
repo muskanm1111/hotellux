@@ -28,7 +28,7 @@ const Services = () => {
 
   return (
     <section className="w-full max-w-full px-4 py-20 lg:py-28 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
-      {/* Heading with the stylish "Awesome" text */}
+     
       <div className="relative w-full mb-12 text-center">
         <h2 className="relative z-10 text-[50px]  Cormo font-normal text-center uppercase md:text-5xl lg:text-[60px]">
           SERVICES
@@ -38,16 +38,16 @@ const Services = () => {
         </span>
       </div>
 
-      {/* Services Grid */}
+   
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service, index) => (
           <div
             key={index}
             className="relative w-full overflow-hidden group aspect-w-4 aspect-h-5"
           >
-            {/* Image container with overlay */}
+          
             <div className="relative w-full h-0 overflow-hidden pb-[125%]">
-              {/* Image */}
+             
               <div className="absolute inset-0 w-full h-full">
                 <Image
                   src={service.image}
@@ -57,10 +57,9 @@ const Services = () => {
                   className="transition-transform duration-700 group-hover:scale-110"
                 />
 
-                {/* Dark overlay */}
+         
                 <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
 
-                {/* Service title */}
                 <div className="absolute inset-0 flex items-center justify-center text-center">
                   <h3 className="text-xl sm:text-2xl font-light tracking-wider text-white uppercase md:text-3xl px-2">
                     {service.title}

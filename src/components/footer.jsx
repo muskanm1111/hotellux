@@ -10,11 +10,11 @@ import {
   Twitter,
   Rss,
 } from "lucide-react";
-import Image from "next/image";
+
 import Link from "next/link";
 
 const Footer = () => {
-  // Animation variants
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -53,9 +53,9 @@ const Footer = () => {
         variants={containerVariants}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* INFO SECTION */}
+         
           <motion.div variants={itemVariants}>
-            <h3 className="text-3xl font-light mb-6 text-white Cormo ">
+            <h3 className="text-3xl font-light mb-6 text-white Cormo">
               Hotel
             </h3>
             <ul className="space-y-4">
@@ -77,7 +77,7 @@ const Footer = () => {
               >
                 <Mail className="h-5 w-5 text-[#a98868]" />
                 <a href="mailto:example@example.com">hello@desirediv.com</a>
-              </motion.li>
+              </motion.li> 
               <motion.li
                 className="flex items-center gap-3"
                 whileHover="hover"
@@ -89,7 +89,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* ABOUT SECTION */}
+         
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-light mb-6 text-white Cormo">ABOUT</h3>
             <ul className="space-y-4">
@@ -112,7 +112,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* QUICK LINKS SECTION */}
+         
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-light mb-6 text-white Cormo">
               QUICK LINKS
@@ -137,7 +137,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* NEWSLETTER SECTION */}
+     
           <motion.div variants={itemVariants}>
             <div className="w-full">
               <div className="relative">
@@ -162,13 +162,13 @@ const Footer = () => {
         </div>
       </motion.div>
 
-      {/* DIVIDER */}
+   
       <div className="border-t border-gray-800"></div>
 
-      {/* BOTTOM SECTION */}
+  
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center">
-          {/* SOCIAL ICONS */}
+    
           <motion.div
             className="flex space-x-6 mb-8"
             initial={{ opacity: 0, y: 20 }}
@@ -194,7 +194,7 @@ const Footer = () => {
             ))}
           </motion.div>
 
-          {/* LOGO */}
+       
           <motion.div
             className="text-4xl font-bold text-gray-100 Cormo tracking-widest mb-8"
             initial={{ opacity: 0 }}
@@ -205,7 +205,7 @@ const Footer = () => {
             HOTEL
           </motion.div>
 
-          {/* COPYRIGHT */}
+         
           <motion.div
             className="text-sm text-gray-500 text-center"
             initial={{ opacity: 0 }}

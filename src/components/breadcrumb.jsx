@@ -28,12 +28,12 @@ const Breadcrumb = ({
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Main Title */}
+  
       <h1 className="text-4xl Cormo uppercase md:text-5xl lg:text-[50px] text-white  tracking-wider text-center mb-auto mt-auto">
         {title}
       </h1>
 
-      {/* Breadcrumb Navigation */}
+    
       <div className="flex items-center justify-center mb-8 md:mb-12">
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="inline-flex items-center dosis  space-x-2 md:space-x-3">
