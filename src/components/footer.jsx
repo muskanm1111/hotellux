@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const containerVariants = {
@@ -53,16 +54,22 @@ const Footer = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div variants={itemVariants}>
-            <h3 className="text-3xl font-light mb-6 text-white Cormo">
-              Naaz Stay
-            </h3>
+            <div className="flex justify-center">
+              <Image
+                src="/logo.png"
+                alt="Naaz Stay Logo"
+                width={220}
+                height={220}
+                className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] brightness-0 invert mr-auto"
+              />
+            </div>
             <ul className="space-y-4">
               <motion.li
                 className="flex items-start gap-3"
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <MapPin className="h-12 w-12 text-[#a98868] mt-0.5" />
+                <MapPin className="h-5 md:w-8 w-5 md:h-8 text-[#a98868] mt-0.5" />
                 <span>Saderbal, Nageen Lake, Saderbal, Srinagar, Ghat #7</span>
               </motion.li>
               <motion.li
@@ -198,7 +205,15 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
           >
-            NAAZ STAY
+            <div className="flex justify-center">
+              <Image
+                src="/logo.png"
+                alt="Naaz Stay Logo"
+                width={220}
+                height={220}
+                className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] brightness-0 invert"
+              />
+            </div>
           </motion.div>
 
           <motion.div

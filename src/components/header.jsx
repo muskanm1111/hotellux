@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +21,15 @@ const Header = () => {
       <div className="flex items-start">
         <Link
           href="/"
-          className="flex flex-col items-center justify-center px-2 bg-black h-16  md:h-20"
+          className="flex flex-col items-center justify-center px-2 bg-white h-16 md:h-20"
         >
-          <span className="text-3xl lg:text-4xl Cormo  text-[#b99470]   tracking-wider">
-            NAAZ STAY
-          </span>
+          <Image
+            src={"/logo.png"}
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-[120px] h-auto sm:w-[150px] md:w-[180px] lg:w-[200px]"
+          />
         </Link>
       </div>
 
