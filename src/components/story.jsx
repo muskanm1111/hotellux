@@ -6,10 +6,10 @@ const Story = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl HerrVon lg:text-7xl text-gray-400">
-            Experience Luxury
+            Experience Kashmir
           </h2>
           <h3 className="text-3xl md:text-4xl Cormo lg:text-5xl mt-2">
-            UNFORGETTABLE MOMENTS AWAIT
+            AUTHENTIC HOMESTAY BY NIGEEN LAKE
           </h3>
         </div>
 
@@ -18,7 +18,7 @@ const Story = () => {
             <div className="relative w-full h-72 md:h-96 lg:h-[500px]">
               <Image
                 src="/s2.jpg"
-                alt="Hotel LUX Luxury Suite"
+                alt="Naaz Stay Lake View"
                 fill
                 className="object-cover shadow-lg"
               />
@@ -28,46 +28,37 @@ const Story = () => {
           <div className="lg:w-1/2 space-y-12">
             <div className="border-l-2 border-amber-700 pl-6">
               <h3 className="text-4xl md:text-5xl Cormo font-light text-amber-700">
-                Luxurious Stays
+                Traditional Hospitality
               </h3>
               <h4 className="text-lg italic text-gray-600 Cormo">
-                Premium Suites & Rooms
+                Authentic Kashmiri Experience
               </h4>
               <p className="text-gray-700 text-base dosis mt-2 leading-relaxed">
-                Immerse yourself in our meticulously designed rooms featuring
-                premium bedding, smart controls, and stunning city views. Each
-                suite is a sanctuary of comfort and elegance, thoughtfully
-                appointed with luxurious amenities and sophisticated décor. From
-                our spacious Deluxe Rooms to our opulent Presidential Suite,
-                every space is crafted to provide an exceptional stay. Enjoy
-                plush Egyptian cotton linens, marble bathrooms with rainfall
-                showers, state-of-the-art entertainment systems, and
-                personalized concierge service available at the touch of a
-                button. Our rooms seamlessly blend timeless elegance with modern
-                convenience to create an unforgettable retreat in the heart of
-                the city.Our culinary journey begins at La Terrasse, our
-                Michelin-starred restaurant where celebrated Chef Renaud Martin
-                creates innovative dishes that celebrate seasonal ingredients
-                sourced from local artisans and our own organic garden.For a
-                more casual experience, visit Azure Lounge for handcrafted
-                cocktails and tapas with panoramic city views. Our legendary
-                Sunday Brunch at The Grand Room has become a beloved tradition,
-                featuring live cooking stations, a champagne bar, and decadent
-                desserts. For an intimate dining experience, our private Chef&apos;s
-                Table offers a customized tasting menu with wine pairings
-                curated by our master sommelier from our extensive cellar
-                housing over 3,000 bottles from renowned vineyards around the
-                world.
+                Welcome to Naaz Stay, where every moment is crafted to give you
+                an authentic taste of Kashmir. Our homestay, nestled by the
+                serene Nigeen Lake, offers a perfect blend of traditional
+                Kashmiri architecture and modern comfort. Each room is
+                thoughtfully designed with local craftsmanship, featuring
+                intricate woodwork, handwoven carpets, and traditional motifs
+                that tell the story of our rich cultural heritage. Start your
+                day with the aroma of freshly brewed Kahwa, our traditional
+                green tea, served with local honey and almonds. Our rooftop
+                restaurant, overlooking the majestic Dal Lake and surrounding
+                mountains, serves authentic Kashmiri cuisine prepared with
+                locally sourced ingredients. From the famous Wazwan feast to our
+                signature Rogan Josh, every dish is a celebration of our
+                culinary traditions. Experience the warmth of Kashmiri
+                hospitality as our staff, many of whom are local residents,
+                share stories of our culture and traditions. Whether you&apos;re
+                enjoying a peaceful evening by the lake, exploring the nearby
+                Mughal gardens, or simply relaxing in our cozy rooms, every
+                moment at Naaz Stay is designed to create lasting memories of
+                your Kashmir journey.
               </p>
             </div>
-
-          
-
-        
-            </div> 
           </div>
         </div>
-    
+      </div>
     </section>
   );
 };

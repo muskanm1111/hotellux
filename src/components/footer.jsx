@@ -14,7 +14,6 @@ import {
 import Link from "next/link";
 
 const Footer = () => {
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -53,10 +52,9 @@ const Footer = () => {
         variants={containerVariants}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-         
           <motion.div variants={itemVariants}>
             <h3 className="text-3xl font-light mb-6 text-white Cormo">
-              Hotel
+              Naaz Stay
             </h3>
             <ul className="space-y-4">
               <motion.li
@@ -65,10 +63,7 @@ const Footer = () => {
                 variants={linkHoverVariants}
               >
                 <MapPin className="h-12 w-12 text-[#a98868] mt-0.5" />
-                <span>
-                  T-16, Pocket-5, Plot no-6, Malik Builcon, Commercial Plaza
-                  Dwarka Sector-12, New Delhi, 110075
-                </span>
+                <span>Saderbal, Nageen Lake, Saderbal, Srinagar, Ghat #7</span>
               </motion.li>
               <motion.li
                 className="flex items-center gap-3"
@@ -76,20 +71,27 @@ const Footer = () => {
                 variants={linkHoverVariants}
               >
                 <Mail className="h-5 w-5 text-[#a98868]" />
-                <a href="mailto:example@example.com">hello@desirediv.com</a>
-              </motion.li> 
+                <a href="mailto:naazstay@gmail.com">naazstay@gmail.com</a>
+              </motion.li>
               <motion.li
                 className="flex items-center gap-3"
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
                 <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:1-800-123-1234">Call Us: 1-800-123-1234</a>
+                <a href="tel:9541002517">Mobile: 9541002517 (Tanya)</a>
+              </motion.li>
+              <motion.li
+                className="flex items-center gap-3"
+                whileHover="hover"
+                variants={linkHoverVariants}
+              >
+                <Phone className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9810102517">Mobile: 9810102517 (Shazia)</a>
               </motion.li>
             </ul>
           </motion.div>
 
-         
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-light mb-6 text-white Cormo">ABOUT</h3>
             <ul className="space-y-4">
@@ -112,7 +114,6 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-         
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-light mb-6 text-white Cormo">
               QUICK LINKS
@@ -137,7 +138,6 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-     
           <motion.div variants={itemVariants}>
             <div className="w-full">
               <div className="relative">
@@ -162,13 +162,10 @@ const Footer = () => {
         </div>
       </motion.div>
 
-   
       <div className="border-t border-gray-800"></div>
 
-  
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center">
-    
           <motion.div
             className="flex space-x-6 mb-8"
             initial={{ opacity: 0, y: 20 }}
@@ -194,7 +191,6 @@ const Footer = () => {
             ))}
           </motion.div>
 
-       
           <motion.div
             className="text-4xl font-bold text-gray-100 Cormo tracking-widest mb-8"
             initial={{ opacity: 0 }}
@@ -202,10 +198,9 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
           >
-            HOTEL
+            NAAZ STAY
           </motion.div>
 
-         
           <motion.div
             className="text-sm text-gray-500 text-center"
             initial={{ opacity: 0 }}

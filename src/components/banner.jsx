@@ -10,13 +10,13 @@ export const Banner = () => {
   const images = [
     {
       img: "/os2.jpeg",
-      title: "Book Early Save More",
-      description: "FINEST HOTEL COLLECTION",
+      title: "Experience Kashmir's Beauty",
+      description: "NAAZ STAY BY NIGEEN LAKE",
     },
     {
       img: "/1.jpg",
-      title: "Feel Like Home",
-      description: "FINEST HOTEL COLLECTION",
+      title: "Your Cozy Retreat",
+      description: "AUTHENTIC KASHMIRI HOSPITALITY",
     },
   ];
   const intervalRef = useRef(null);
@@ -26,7 +26,9 @@ export const Banner = () => {
   };
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   useEffect(() => {
@@ -65,7 +67,6 @@ export const Banner = () => {
     };
   }, [imagesLoaded, images.length]);
 
- 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -125,7 +126,6 @@ export const Banner = () => {
 
   return (
     <div className="relative w-full h-[80vh] md:h-screen overflow-hidden">
-   
       {imagesLoaded && (
         <div className="absolute inset-0 w-full h-full">
           <motion.div
@@ -145,7 +145,7 @@ export const Banner = () => {
             >
               <Image
                 src={images[currentIndex].img}
-                alt={`banner-${currentIndex}`}
+                alt={`Naaz Stay - ${images[currentIndex].title}`}
                 fill
                 className="object-cover object-center w-full h-full bg-black/20"
                 priority={true}
@@ -154,27 +154,29 @@ export const Banner = () => {
                        (max-width: 1024px) 100vw,
                        100vw"
                 quality={90}
-           
               />
             </motion.div>
           </AnimatePresence>
         </div>
       )}
 
-
-
-
-
-
-
-
-
       <button
         onClick={goToPrevious}
         className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-30 hover:bg-white/50 p-1 sm:p-2 bg-black/20 rounded-full hidden sm:block"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-6 h-6 text-white"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
         </svg>
       </button>
 
@@ -182,12 +184,22 @@ export const Banner = () => {
         onClick={goToNext}
         className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-30 hover:bg-white/50 p-1 sm:p-2 bg-black/20 rounded-full hidden sm:block"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-6 h-6 text-white"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
         </svg>
       </button>
 
-    
       <section className="absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6">
         <div className="container mx-auto">
           <motion.div
@@ -214,7 +226,7 @@ export const Banner = () => {
               className="bg-[#b99470] text-white hover:text-[#b99470] dosis  py-2 sm:py-3 px-4 sm:px-6 md:px-8 text-xs sm:text-sm md:text-base shadow-lg hover:bg-[#f7f7f7] transition duration-300 ease-in-out "
               variants={itemVariants}
             >
-              ROOMS & SUITS
+              BOOK YOUR STAY
             </motion.button>
           </motion.div>
         </div>

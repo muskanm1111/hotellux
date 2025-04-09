@@ -8,22 +8,22 @@ const Awards = () => {
     {
       id: 1,
       image: "/a1.jpg",
-      alt: "World Boutique Hotel Awards",
+      alt: "Best Homestay in Kashmir 2023",
     },
     {
       id: 2,
       image: "/a2.jpg",
-      alt: "2015 Travellers' Choice - TripAdvisor",
+      alt: "Top Rated on TripAdvisor",
     },
     {
       id: 3,
       image: "/a3.jpg",
-      alt: "World Luxury Spa Winner 2016",
+      alt: "Excellence in Kashmiri Hospitality",
     },
     {
       id: 4,
       image: "/a4.jpg",
-      alt: "European Hotel Design Awards",
+      alt: "Best Lake View Accommodation",
     },
   ];
 
@@ -32,9 +32,9 @@ const Awards = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -43,15 +43,15 @@ const Awards = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
-      }
-    }
+        duration: 0.5,
+      },
+    },
   };
 
   return (
     <section className="w-full bg-white pb-10 md:pb-12">
       <div className="max-w-7xl mx-auto px-8">
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
 
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,17 +17,17 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between w-full fixed top-0 left-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out">
-   
       <div className="flex items-start">
-        <Link href="/" className="flex flex-col items-center justify-center px-2 bg-black h-16  md:h-20">
+        <Link
+          href="/"
+          className="flex flex-col items-center justify-center px-2 bg-black h-16  md:h-20"
+        >
           <span className="text-3xl lg:text-4xl Cormo  text-[#b99470]   tracking-wider">
-           HOTEL 
+            NAAZ STAY
           </span>
-          
         </Link>
       </div>
 
-   
       <nav className="hidden md:flex flex-1 justify-center bg-white  lg:h-10">
         <ul className="flex items-center space-x-4 lg:space-x-8 text-black dosis">
           <li>
@@ -67,14 +66,11 @@ const Header = () => {
         </ul>
       </nav>
 
-      
       <div className="flex items-center">
-
         <div className="flex md:flex items-center bg-white h-16 px-4 lg:h-20">
           <button className="p-2" aria-label="Search">
             <Search size={20} />
           </button>
-
         </div>
 
         <button
@@ -114,7 +110,6 @@ const Header = () => {
                 >
                   About
                 </Link>
-
               </li>
               <li>
                 <Link
@@ -125,8 +120,7 @@ const Header = () => {
                   Rooms
                 </Link>
               </li>
-            
-             
+
               <li>
                 <Link
                   href="/contact"
