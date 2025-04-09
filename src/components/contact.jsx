@@ -149,7 +149,7 @@ const Contact = () => {
           <div className="md:w-[400px] md:h-60 overflow-x-hidden bg-gray-100 flex flex-col items-center justify-center mb-8">
             <div className="text-gray-500 mb-2">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.234350710503!2d77.04311527461583!3d28.592745575686518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bd8f405bcf1%3A0x9e601372145832d0!2sDesire%20Div%20-%20Website%20Designing%20Company%20in%20Dwarka!5e0!3m2!1sen!2sin!4v1743748134111!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26428.70295067084!2d74.81165658983033!3d34.10569688072556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e185aa289c138b%3A0xd68ebadabcaaac43!2sNaaz%20Kashmir!5e0!3m2!1sen!2sin!4v1744197829070!5m2!1sen!2sin"
                 width="400"
                 height="240"
                 referRepolicy="no-referrer-when-downgrade"
