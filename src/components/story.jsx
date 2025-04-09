@@ -13,7 +13,8 @@ const Story = () => {
           </h3>
         </div>
 
-        <div className="flex flex-col lg:flex-row mx-auto max-w-7xl gap-12 items-center">
+        {/* Welcome Section */}
+        <div className="flex flex-col lg:flex-row mx-auto max-w-7xl gap-12 items-center mb-20">
           <div className="w-full lg:w-1/2">
             <div className="relative w-full h-72 md:h-96 lg:h-[500px]">
               <Image
@@ -25,37 +26,79 @@ const Story = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 space-y-12">
+          <div className="lg:w-1/2 space-y-6">
             <div className="border-l-2 border-amber-700 pl-6">
               <h3 className="text-4xl md:text-5xl Cormo font-light text-amber-700">
-                Traditional Hospitality
+                Welcome to Naaz Stay
               </h3>
               <h4 className="text-lg italic text-gray-600 Cormo">
-                Authentic Kashmiri Experience
+                Your Cozy Retreat by Nigeen Lake
               </h4>
-              <p className="text-gray-700 text-base dosis mt-2 leading-relaxed">
-                Welcome to Naaz Stay, where every moment is crafted to give you
-                an authentic taste of Kashmir. Our homestay, nestled by the
-                serene Nigeen Lake, offers a perfect blend of traditional
-                Kashmiri architecture and modern comfort. Each room is
-                thoughtfully designed with local craftsmanship, featuring
-                intricate woodwork, handwoven carpets, and traditional motifs
-                that tell the story of our rich cultural heritage. Start your
-                day with the aroma of freshly brewed Kahwa, our traditional
-                green tea, served with local honey and almonds. Our rooftop
-                restaurant, overlooking the majestic Dal Lake and surrounding
-                mountains, serves authentic Kashmiri cuisine prepared with
-                locally sourced ingredients. From the famous Wazwan feast to our
-                signature Rogan Josh, every dish is a celebration of our
-                culinary traditions. Experience the warmth of Kashmiri
-                hospitality as our staff, many of whom are local residents,
-                share stories of our culture and traditions. Whether you&apos;re
-                enjoying a peaceful evening by the lake, exploring the nearby
-                Mughal gardens, or simply relaxing in our cozy rooms, every
-                moment at Naaz Stay is designed to create lasting memories of
-                your Kashmir journey.
+              <p className="text-gray-700 text-base dosis mt-4 leading-relaxed">
+                Nestled right on the serene banks of Nigeen Lake, Naaz Stay
+                offers an intimate and charming escape into the heart of
+                Kashmir. Our homestay is a unique, small property that promises
+                comfort, warmth, and an authentic local experience – just steps
+                away from the peaceful waters.
+              </p>
+              <p className="text-gray-700 text-base dosis mt-4 leading-relaxed">
+                Each of our tastefully designed rooms comes with attached
+                bathrooms and is adorned with traditional Kashmiri décor,
+                blending elegance with cultural richness. Whether you're sipping
+                Kahwa by the window or relaxing after a day of exploring, you'll
+                feel right at home.
+              </p>
+              <p className="text-gray-700 text-base dosis mt-4 leading-relaxed">
+                The highlight? Our rooftop restaurant – the perfect spot to
+                unwind with a hot cup of tea while soaking in breathtaking views
+                of Nigeen Lake and the majestic mountains that frame it.
+              </p>
+              <p className="text-gray-700 text-base dosis mt-4 leading-relaxed">
+                Whether you're a solo traveler, a couple, or a small group of
+                friends, Naaz Stay is your cozy base to experience the beauty,
+                tranquility, and warmth of Kashmir.
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* About Us Section */}
+        <div className="max-w-7xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h3 className="text-4xl md:text-5xl Cormo font-light text-amber-700">
+              ABOUT US
+            </h3>
+          </div>
+          <div className="bg-gray-50 p-8 rounded-lg shadow-md">
+            <p className="text-gray-700 text-base dosis leading-relaxed mb-4">
+              Naaz Stay is not just a place to stay – it's an experience of true
+              Kashmiri hospitality. Nestled right on the banks of the serene
+              Nigeen Lake, our homestay is designed to make you feel at home
+              while immersing you in the warmth, culture, and charm of Kashmir.
+            </p>
+            <p className="text-gray-700 text-base dosis leading-relaxed mb-4">
+              At Naaz Stay, our concept is simple: to offer you an authentic and
+              heartfelt experience of Kashmiri living. From the moment you
+              arrive, you'll feel the difference – not just in the service, but
+              in the soul of the space itself.
+            </p>
+            <p className="text-gray-700 text-base dosis leading-relaxed mb-4">
+              Our rooms are thoughtfully designed with traditional Kashmiri
+              craftsmanship, featuring woodwork, intricate patterns, and locally
+              inspired decor – all beautifully blended with modern comforts and
+              amenities. Each room comes with an attached bathroom and cozy
+              interiors that reflect the elegance and heritage of the region.
+            </p>
+            <p className="text-gray-700 text-base dosis leading-relaxed">
+              Head up to our rooftop restaurant and take in the breathtaking
+              views of Nigeen Lake and the surrounding mountains – a perfect
+              spot to relax and take in the magic of Kashmir.
+            </p>
+            <p className="text-gray-700 text-base dosis leading-relaxed mt-4">
+              Whether you're here to unwind, explore, or just experience
+              something different, Naaz Stay welcomes you with open arms and the
+              warmth of true Kashmiri hospitality.
+            </p>
           </div>
         </div>
       </div>

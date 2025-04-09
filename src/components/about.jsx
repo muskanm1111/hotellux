@@ -40,19 +40,10 @@ const About = () => {
         </p>
 
         <p className="text-gray-600 dosis leading-relaxed mb-10 max-w-2xl mx-auto text-xl">
-          Whether you&apos;re a solo traveler, a couple, or a small group of friends,
-          Naaz Stay is your cozy base to experience the beauty, tranquility, and
-          warmth of Kashmir.
+          Whether you&apos;re a solo traveler, a couple, or a small group of
+          friends, Naaz Stay is your cozy base to experience the beauty,
+          tranquility, and warmth of Kashmir.
         </p>
-
-        <div className="mb-16">
-          <Link
-            href="/services"
-            className="text-[#b99470] Cormo italic text-2xl hover:text-amber-700 transition-colors"
-          >
-            View Our Services
-          </Link>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="h-80 md:h-96 relative overflow-hidden">
