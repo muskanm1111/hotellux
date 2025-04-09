@@ -102,18 +102,23 @@ const Footer = () => {
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-light mb-6 text-white Cormo">ABOUT</h3>
             <ul className="space-y-4">
-              {["About Us", "Services", "Rooms", "Our Location"].map((item) => (
+              {[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+                { label: "Rooms", href: "/rooms" },
+                { label: "Contact", href: "/contact" },
+              ].map((item) => (
                 <motion.li
-                  key={item}
+                  key={item.label}
                   className="pb-2 border-b border-gray-800 flex items-center"
                   whileHover="hover"
                   variants={linkHoverVariants}
                 >
                   <Link
-                    href="#"
+                    href={item.href}
                     className="w-full flex justify-between items-center"
                   >
-                    <span>{item}</span>
+                    <span>{item.label}</span>
                     <span className="text-[#a98868]">•</span>
                   </Link>
                 </motion.li>
@@ -126,18 +131,23 @@ const Footer = () => {
               QUICK LINKS
             </h3>
             <ul className="space-y-4">
-              {["Facebook", "Instagram", "YouTube", "Pinterest"].map((item) => (
+              {[
+                { label: "Facebook", href: "#" },
+                { label: "Instagram", href: "#" },
+                { label: "YouTube", href: "#" },
+                { label: "Pinterest", href: "#" },
+              ].map((item) => (
                 <motion.li
-                  key={item}
+                  key={item.label}
                   className="pb-2 border-b border-gray-800 flex items-center"
                   whileHover="hover"
                   variants={linkHoverVariants}
                 >
                   <Link
-                    href="#"
+                    href={item.href}
                     className="w-full flex justify-between items-center"
                   >
-                    <span>{item}</span>
+                    <span>{item.label}</span>
                     <span className="text-[#a98868]">•</span>
                   </Link>
                 </motion.li>
@@ -146,25 +156,43 @@ const Footer = () => {
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <div className="w-full">
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder="Enter Your Email..."
-                  className="w-full bg-[#1a1a1a] border border-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-[#a98868]"
-                />
-                <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                  <Mail className="h-5 w-5 text-[#a98868]" />
-                </div>
-              </div>
-              <motion.button
-                className="w-full bg-[#a98868] text-black font-medium py-3 mt-3"
-                whileHover={{ backgroundColor: "white" }}
-                whileTap={{ scale: 0.98 }}
+            <h3 className="text-xl font-light mb-6 text-white Cormo">
+              CONTACT US
+            </h3>
+            <ul className="space-y-4">
+              <motion.li
+                className="flex items-start gap-3"
+                whileHover="hover"
+                variants={linkHoverVariants}
               >
-                SUBSCRIBE
-              </motion.button>
-            </div>
+                <MapPin className="h-5 md:w-8 w-5 md:h-8 text-[#a98868] mt-0.5" />
+                <span>Saderbal, Nageen Lake, Saderbal, Srinagar, Ghat #7</span>
+              </motion.li>
+              <motion.li
+                className="flex items-center gap-3"
+                whileHover="hover"
+                variants={linkHoverVariants}
+              >
+                <Mail className="h-5 w-5 text-[#a98868]" />
+                <a href="mailto:naazstay@gmail.com">naazstay@gmail.com</a>
+              </motion.li>
+              <motion.li
+                className="flex items-center gap-3"
+                whileHover="hover"
+                variants={linkHoverVariants}
+              >
+                <Phone className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9541002517">Mobile: 9541002517 (Tanya)</a>
+              </motion.li>
+              <motion.li
+                className="flex items-center gap-3"
+                whileHover="hover"
+                variants={linkHoverVariants}
+              >
+                <Phone className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9810102517">Mobile: 9810102517 (Shazia)</a>
+              </motion.li>
+            </ul>
           </motion.div>
         </div>
       </motion.div>

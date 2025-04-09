@@ -53,7 +53,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/rooms"
               className="uppercase text-base font-medium hover:text-[#b99470]"
             >
               Rooms
@@ -118,7 +118,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/rooms"
                   onClick={closeMenu}
                   className="block uppercase text-sm font-medium hover:text-[#b99470]"
                 >
