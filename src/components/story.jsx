@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Activities from "./Activities";
 
 const Story = () => {
   return (
@@ -101,6 +102,9 @@ const Story = () => {
             </p>
           </div>
         </div>
+
+        {/* Include the Activities component */}
+        <Activities />
       </div>
     </section>
   );
