@@ -28,14 +28,7 @@ const RoomsPage = () => {
 
   return (
     <div className="min-h-screen bg-[#f5f5f5]">
-      <Breadcrumb
-        title="OUR ROOMS"
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Rooms", href: "/rooms" },
-        ]}
-        backgroundImage="/os2.jpeg"
-      />
+      <Breadcrumb title="OUR ROOMS" backgroundImage="/os2.jpeg" />
 
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
