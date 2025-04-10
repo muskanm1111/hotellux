@@ -11,7 +11,7 @@ const Services = () => {
     },
     {
       title: "SHIKARA RIDES",
-      image: "/f2.jpg",
+      image: "/sr1.avif",
       alt: "Shikara boat on Nigeen Lake",
     },
     {
@@ -21,7 +21,7 @@ const Services = () => {
     },
     {
       title: "CULTURAL TOURS",
-      image: "/f4.jpg",
+      image: "/sr2.webp",
       alt: "Kashmiri cultural experiences",
     },
   ];
@@ -30,7 +30,7 @@ const Services = () => {
     <section className="w-full max-w-full px-4 py-20 lg:py-28 mx-auto overflow-hidden bg-white md:px-8 lg:px-16">
       <div className="relative w-full mb-12 text-center">
         <h2 className="relative z-10 text-[50px]  Cormo font-normal text-center uppercase md:text-5xl lg:text-[60px]">
-          ACTIVITIES
+          Services
         </h2>
         <span className="absolute top-0  -mt-6 md:-mb-4 left-0 right-0 z-0 text-[100px] HerrVon  text-center text-gray-300 transform -translate-y-1/4 md:text-6xl lg:text-[140px]">
           Authentic

@@ -1,4 +1,4 @@
-import Aboutaward from "@/components/about-award";
+// import Aboutaward from "@/components/about-award";
 import Abouttestimonials from "@/components/about-testimonials";
 import Breadcrumb from "@/components/breadcrumb";
 import Slider from "@/components/slider";
@@ -12,7 +12,7 @@ const page = () => {
       <Story />
       <Slider />
       <Abouttestimonials />
-      <Aboutaward />
+      {/* <Aboutaward /> */}
     </div>
   );
 };

@@ -1,7 +1,8 @@
-import About from "@/components/about";
-import Awards from "@/components/awards";
+import About from "@/components/about";;
+import Activitiestwo from "@/components/activities2";
 import { Banner } from "@/components/banner";
 import Fbanner from "@/components/fbanner";
+import RestaurantSection from "@/components/RestaurantSection";
 import Services from "@/components/Services";
 import Slider from "@/components/slider";
 import Testimonials from "@/components/testimonials";
@@ -14,8 +15,11 @@ const page = () => {
       <About />
       <Slider />
       <Services />
+      <RestaurantSection />
+      <Activitiestwo />
       <Testimonials />
-      <Awards />
+      
+      {/* <Awards /> */}
       <Fbanner />
     </>
   );

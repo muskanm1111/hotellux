@@ -19,6 +19,9 @@
 .Cormo {
   font-family: var(--font-Cormo);
 }
+.Cormorant {
+  font-family: var(--font-Cormorant);
+}
 
 @layer base {
   :root {

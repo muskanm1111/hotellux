@@ -22,6 +22,11 @@ const Dosis = localFont({
   variable : "--font-dosis",
   weight : "100 200 300 400 500 600 700"
 })
+const Cormorant = localFont({
+  src: "./fonts/CormorantSC-Light.ttf",
+  variable: "--font-Cormorant",
+  weight: "100 200 300 400 500 600 700",
+});
 
 
 const HerrVon = localFont({

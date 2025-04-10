@@ -205,7 +205,7 @@ const Activities = () => {
                 >
                   <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                     <Image
-                      src="/s3.jpg"
+                      src="/os2.jpeg"
                       alt="Naaz Stay Library"
                       className="object-cover w-full h-full"
                       width={500}

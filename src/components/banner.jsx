@@ -209,7 +209,7 @@ export const Banner = () => {
             animate="visible"
           >
             <motion.h1
-              className="text-6xl xl:text-[6.5rem] HerrVon text-white leading-tight tracking-wide"
+              className="text-6xl xl:text-[4rem] Cormo font-thin  text-white leading-tight tracking-wide"
               variants={headingVariants}
             >
               {images[currentIndex].title}

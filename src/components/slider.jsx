@@ -30,7 +30,7 @@ const Slider = () => {
         "Elegant interiors with Kashmiri-inspired décor",
       ],
       // price: "3500",
-      image: "/os2.jpeg",
+      image: "/room1.jpg",
     },
   ];
 
@@ -52,7 +52,7 @@ const Slider = () => {
           // Single room view
           <div className="border-none shadow-none">
             <div className="p-0">
-              <div className="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden">
+              <div className="flex flex-col md:flex-row bg-white  overflow-hidden">
                 <div className="w-full md:w-1/2 h-[400px] md:h-[600px] relative">
                   <Image
                     src={rooms[0].image}
