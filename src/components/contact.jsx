@@ -182,7 +182,7 @@ const Contact = () => {
 
               <div className="flex items-start">
                 <Phone className="h-5 w-5 text-[#b99470] mt-1 mr-3" />
-                <p className="text-gray-600">Mobile: 9810102517 (Shazia)</p>
+                <p className="text-gray-600">Mobile:  9810102617 (shazia)</p>
               </div>
 
               <div className="flex items-start">

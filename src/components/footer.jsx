@@ -94,7 +94,7 @@ const Footer = () => {
                 variants={linkHoverVariants}
               >
                 <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:9810102517">Mobile: 9810102517 (Shazia)</a>
+                <a href="tel:9810102517">Mobile:  9810102617 (shazia)</a>
               </motion.li>
             </ul>
           </motion.div>
@@ -190,7 +190,7 @@ const Footer = () => {
                 variants={linkHoverVariants}
               >
                 <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:9810102517">Mobile: 9810102517 (Shazia)</a>
+                <a href="tel:9810102517">Mobile:  9810102617 (shazia)</a>
               </motion.li>
             </ul>
           </motion.div>
