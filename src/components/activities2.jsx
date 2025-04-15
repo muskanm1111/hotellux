@@ -134,7 +134,7 @@ const Activitiestwo = () => {
         <div className="lg:w-2/5">
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
             <Image
-              src="/c1.jpg"
+              src="/c1.JPG"
               alt="Kashmiri Cooking Class"
               fill
               className="object-cover transition-transform duration-700 hover:scale-110"
