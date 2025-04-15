@@ -34,7 +34,7 @@ const Services = () => {
         </h2>
         <span className="absolute top-0  -mt-6 md:-mb-4 left-0 right-0 z-0 text-[100px] HerrVon  text-center text-gray-300 transform -translate-y-1/4 md:text-6xl lg:text-[140px]">
           Authentic
-        </span>
+        </span> 
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

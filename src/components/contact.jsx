@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -176,13 +177,13 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start">
-                <Phone className="h-5 w-5 text-[#b99470] mt-1 mr-3" />
-                <p className="text-gray-600">Mobile: 9541002517 (Tanya)</p>
+                <FaWhatsapp className="h-5 w-5  text-[#a98868]" />
+                <p className="text-gray-600 ml-2">Mobile: 9541002617 (Tanya)</p>
               </div>
 
               <div className="flex items-start">
-                <Phone className="h-5 w-5 text-[#b99470] mt-1 mr-3" />
-                <p className="text-gray-600">Mobile:  9810102617 (shazia)</p>
+                <FaWhatsapp className="h-5 w-5 text-[#a98868]" />
+                <p className="text-gray-600 ml-2">Mobile: 9810102617 (shazia)</p>
               </div>
 
               <div className="flex items-start">

@@ -24,11 +24,11 @@ const Header = () => {
           className="flex flex-col items-center justify-center px-2 bg-white h-16 md:h-20"
         >
           <Image
-            src={"/logo.png"}
+            src={"/logo1.1.png"}
             alt="logo"
-            width={200}
-            height={200}
-            className="w-[120px] h-auto sm:w-[150px] md:w-[180px] lg:w-[200px]"
+            width={250}
+            height={100}
+            className="w-[120px] h-[200px] p-0 lg:p-6 sm:w-[150px] md:w-[180px] lg:w-[250px]"
           />
         </Link>
       </div>

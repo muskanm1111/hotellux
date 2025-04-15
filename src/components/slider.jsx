@@ -30,7 +30,7 @@ const Slider = () => {
         "Elegant interiors with Kashmiri-inspired décor",
       ],
       // price: "3500",
-      image: "/room1.jpg",
+      image: "/90.jpeg",
     },
   ];
 

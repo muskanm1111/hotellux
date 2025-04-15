@@ -14,7 +14,7 @@ export const Banner = () => {
       description: "NAAZ STAY BY NIGEEN LAKE",
     },
     {
-      img: "/1.jpg",
+      img: "/os1.jpeg",
       title: "Your Cozy Retreat",
       description: "AUTHENTIC KASHMIRI HOSPITALITY",
     },
@@ -132,7 +132,7 @@ export const Banner = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.6 }}
             transition={{ duration: 1 }}
-            className="absolute w-full h-full bg-black inset-0 z-[5]"
+            className="absolute w-full h-full bg-black/75 inset-0 z-[5]"
           />
           <AnimatePresence mode="sync">
             <motion.div
@@ -203,13 +203,13 @@ export const Banner = () => {
       <section className="absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6">
         <div className="container mx-auto">
           <motion.div
-            className="max-w-4xl mx-auto text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 p-2 sm:p-4"
+            className="max-w-4xl mx-auto text-center  space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-3 p-2 sm:p-4"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.h1
-              className="text-6xl xl:text-[4rem] Cormo font-thin  text-white leading-tight tracking-wide"
+              className="text-4xl xl:text-[3rem] Cormo font-thin  text-white leading-tight tracking-wide"
               variants={headingVariants}
             >
               {images[currentIndex].title}

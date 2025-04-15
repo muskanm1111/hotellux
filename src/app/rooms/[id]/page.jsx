@@ -20,7 +20,7 @@ const RoomPage = () => {
       "Attached private bathroom with essential toiletries",
       "Elegant interiors with Kashmiri-inspired décor",
     ],
-    image: "/os2.jpeg",
+    image: "/os1.jpeg",
   };
 
   return (

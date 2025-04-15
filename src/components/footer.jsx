@@ -13,6 +13,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const containerVariants = {
@@ -85,16 +86,16 @@ const Footer = () => {
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:9541002517">Mobile: 9541002517 (Tanya)</a>
+                <FaWhatsapp className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9541002517">Mobile: 9541002617 (Tanya)</a>
               </motion.li>
               <motion.li
                 className="flex items-center gap-3"
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:9810102517">Mobile:  9810102617 (shazia)</a>
+                <FaWhatsapp className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9810102517">Mobile: 9810102617 (shazia)</a>
               </motion.li>
             </ul>
           </motion.div>
@@ -181,16 +182,16 @@ const Footer = () => {
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:9541002517">Mobile: 9541002517 (Tanya)</a>
+                <FaWhatsapp className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9541002517">Mobile: 9541002617 (Tanya)</a>
               </motion.li>
               <motion.li
                 className="flex items-center gap-3"
                 whileHover="hover"
                 variants={linkHoverVariants}
               >
-                <Phone className="h-5 w-5 text-[#a98868]" />
-                <a href="tel:9810102517">Mobile:  9810102617 (shazia)</a>
+                <FaWhatsapp className="h-5 w-5 text-[#a98868]" />
+                <a href="tel:9810102517">Mobile: 9810102617 (shazia)</a>
               </motion.li>
             </ul>
           </motion.div>
