@@ -100,7 +100,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          <motion.div variants={itemVariants} >
+          <motion.div variants={itemVariants}>
             <h3 className="text-xl font-light mb-6 text-white Cormo">ABOUT</h3>
             <ul className="space-y-4">
               {[
@@ -236,11 +236,11 @@ const Footer = () => {
           >
             <div className="flex justify-center">
               <Image
-                src="/logo.png"
+                src="/logo1.1.png"
                 alt="Naaz Stay Logo"
                 width={220}
                 height={220}
-                className="w-[150px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] brightness-0 invert"
+                className="w-[120px] brightness-0 invert -mt-5"
               />
             </div>
           </motion.div>
